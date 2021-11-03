@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sistema Educacional</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./img/education.png" alt="">
+            <h2>
+                EducarSempre
+            </h2>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#banner">Home</a>
+                </li>
+                <li>
+                    <a href="#calculo">Sistema</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="pesquisa">
+            <label for="pesquisar">Pesquisar</label>
+            <input type="search" name="pesquisar" id="pesquisar">
+        </div>
+    </header>
+
+    <main>
+        <p id="banner"></p>
+        <section class="banner">
+            <figure>
+                <img src="./img/fundo.jpg" alt="">
+            </figure>
+        </section>
+        <p id="calculo"></p>
+        <section class="calculo" >
+            <h2>
+                Sistema de Cálculo
+            </h2>
+            <div class="calculo-media">
+                <div class="content">
+                    <div class="title">
+                        <h3>Verificar Média</h3>
+                    </div>
+                    <form action="">
+                        <label for="nota1">Primeira Nota</label>
+                        <input type="number" name="nota1" id="nota1">
+                        <label for="nota2">Segunda Nota</label>
+                        <input type="number" name="nota2" id="nota2">
+                        <label for="nota3">Terceira Nota</label>
+                        <input type="number" name="nota3" id="nota3">
+                        <label for="nota4">Quarta Nota</label>
+                        <input type="number" name="nota4" id="nota4">
+                        <input type="button" value="Calcular" onclick="calcularMedia()" id="button">
+                        <input type="button" value="Nova Consulta" onclick="limpar()" id="button">
+                    </form>
+                </div>
+                <div class="resultado">
+                    <div class="title-resultado">
+                        <h3>Resultado</h3>
+                    </div>
+                    <p id="verMedia">
+                        A média aparecerá aqui
+                    </p>
+                    <p id="status">
+                        Status do aluno
+                    </p>
+                </div>
+            </div>
+        </section>
+        <p id="sobre"></p>
+        <section class="sobre">
+            <h2>
+                Sobre
+            </h2>
+            <div class="sobre-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad, ex
+                    pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id earum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad, ex
+                    pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex
+                    pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id earum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad, ex
+                    pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex
+                    pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id earum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad, ex
+                    pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id earum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad, ex
+                    pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id
+                    earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo natus, hic eligendi in ad,
+                    ex pariatur, autem odit nisi voluptatem blanditiis molestiae fuga aut voluptas atque illo id earum.
+                </p>
+            </div>
+        </section>
+        <p id="contato"></p>
+        <section class="contato">
+            <h2>
+                Contato
+            </h2>
+            <div class="contato-content">
+                <form>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="telefone">Telefone</label>
+                    <input type="telefone" name="telefone" id="telefone">
+                    <input type="submit" value="Enviar" id="button" class="button-enviar">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>Desenvolvido por Rafael Moura</p>
+        </footer>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
