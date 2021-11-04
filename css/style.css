@@ -16,6 +16,7 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     padding: 10px;
@@ -63,17 +64,6 @@ header {
     transition: all ease-in-out 0.1s;
 }
 
-
-.pesquisa input {
-    margin-left: 10px;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    background-color: rgb(255, 255, 255);
-    padding: 5px 0 5px 10px;
-
-}
-
 main {
     display: flex;
     align-items: center;
@@ -94,6 +84,10 @@ main {
 .calculo {
     margin-top: 40px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .calculo h2 {
@@ -104,20 +98,10 @@ main {
 
 .calculo-media {
     display: flex;
+    width: 90%;
     justify-content: center;
     margin-top: 40px;
-}
-
-
-.resultado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #e9e9e9;
-    box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.34);
-    padding: 30px;
-    margin-left: 20px;
-    width: 300px;
+    flex-wrap: wrap;
 }
 
 #verMedia,
@@ -149,6 +133,7 @@ main {
 
 .content {
     display: flex;
+    width: 50%;
     flex-direction: column;
     align-items: center;
     border: 1px solid #e9e9e9;
@@ -173,7 +158,7 @@ main {
     outline: none;
     border: none;
     background-color: #f7f7f7f7;
-    width: 300px;
+    width: 100%;
     padding: 15px;
     font-size: 17px;
 
@@ -181,6 +166,17 @@ main {
 
 .content form label {
     margin-top: 10px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e9e9e9;
+    box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.34);
+    padding: 30px;
+    margin-left: 20px;
+    width: 40%;
 }
 
 #button {
@@ -266,6 +262,7 @@ main {
     font-size: 16px;
     outline: none;
 }
+
 .contato-content form label {
     margin-top: 15px;
 }
@@ -280,6 +277,53 @@ footer {
     margin-top: 50px;
 }
 
-footer p{
+footer p {
     margin-top: 15px;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 600px) {
+    main {
+        padding-top: 10%;
+    }
+
+    .calculo h2, .sobre h2, .contato h2 {
+        margin-top: 20px;
+    }
+
+    .content,
+    .form {
+        width: 100%;
+    }
+
+    .resultado {
+        margin: 20px 0 0 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .title-resultado {
+        margin: 0;
+    }
+
+    #status {
+        padding-bottom: 20px;
+    }
+
+}
+@media only screen and (max-width: 540px) {
+
+    .menu ul {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    main {
+        padding-top: 15%;
+    }
+
 }
