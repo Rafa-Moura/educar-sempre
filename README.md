@@ -1,4 +1,5 @@
-# calcular-media
-Sistema feito na aula do dia 03 de novembro da Recode Pro
+# EducarSempre
 
-Sistema sem versão responsiva, mais detalhes serão adicionados em breve.
+Projeto EducarSempre. Site para calcular a média entre 4 notas de um aluno. 
+
+Site está disponível para utilização no link: https://rafa-moura.github.io/calcular-media.
